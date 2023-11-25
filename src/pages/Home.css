@@ -1,0 +1,53 @@
+/* .top-part{
+    position: fixed;
+} */
+/* @media screen and (max-width:900px){
+    .middle-container{
+        width: 100vw;
+    }
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.middle-part{
+    display: flex;
+    /* flex-direction: row;
+    gap: 10px; */
+    /* overflow-y: visible; */
+}
+.middle-container{
+    display: flex;
+}
+.left{
+    flex: 1;
+    /* background-color: yellow; */
+    height: 100vh;
+}
+.middle{
+    flex: 2;
+    /* background-color: aqua; */
+    height: 100vh;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.right{
+    flex: 1;
+    /* background-color: red; */
+    height: 100vh;
+}
+
+.jobs-middle-container{
+    background-color: blue;
+}
+.networks-middle-container{
+    background-color: green;
+}
+.notifications-middle-container{
+    background-color: yellow;
+}
+.profile-middle-container{
+    background-color: orange;
+}

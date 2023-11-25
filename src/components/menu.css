@@ -1,0 +1,35 @@
+.menu-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: black;
+    color: white;
+   
+}
+.logo{
+    font-weight: 900;
+}
+.menu-tabs{
+    display: flex;
+    gap: 20px;
+}
+.menu-tabs :hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width:400px){
+    .menu-container{
+        display: none;
+    }
+    
+ 
+}
+@media screen and (max-width:900px){
+    .menu-container{
+        display: none;
+    }
+    
+ 
+}
+
+
