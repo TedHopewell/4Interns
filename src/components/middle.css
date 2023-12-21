@@ -52,7 +52,12 @@
     .job-list-card{
         width: 80%;
         display: flex;
-        
+    }
+    .left-container{
+        display: none;
+    }
+    .right-container{
+        display: none;
     }
   
 }

@@ -51,3 +51,7 @@
 .profile-middle-container{
     background-color: orange;
 }
+.back-arrow-icon{
+    color: aqua;
+    cursor: pointer;
+}
