@@ -5,27 +5,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 
-const Jobspage = () => {
+const MyMessages = () => {
 
   const navigate = useNavigate();
 
   const back = ()=>{
     navigate('/')
 }
-
   return (
     <div>
-      <div className="top-part">
+         <div className="top-part">
         <Menupage />
       </div>
-      <div className="jobs-middle-container">
+      <div className="messages-middle-container">
         <FontAwesomeIcon icon={faArrowLeft} className='back-arrow-icon' onClick={back}/>
-        Jobs content here
+        messages content here
       </div>
-      <div>Applied jobs on the left <br />
-             available jobs on the right </div>
     </div>
   );
 }
 
-export default Jobspage;
+export default MyMessages;

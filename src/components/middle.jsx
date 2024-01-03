@@ -1,6 +1,9 @@
 import React from 'react';
 import './middle.css'
 import { useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faSearch, faBell } from '@fortawesome/free-solid-svg-icons';
 
 const Middleside = () => {
 
@@ -9,10 +12,29 @@ const navigate = useNavigate()
 const button = ()=>{
       navigate('/jobs')
 }
+const profilePic = ()=>{
+    navigate('/profile')
+}
   return (
     <div className='home-middle-container'>
+        <div className="top-part-job-list-searchbar">
+            <div className="photo" onClick={profilePic}>
+                
+            </div>
+            <div className="searchbar">
+                <FontAwesomeIcon icon={faSearch} className='search-icon' />
+                <input type="text" className='input-box'/>
+            </div>
+            <div className="font-awesome-icons-view">
+                <div className="logo">
+                    4INTERNS
+                </div>
+                <FontAwesomeIcon icon={faEnvelope} className='email-icon'/>
+                <FontAwesomeIcon icon={faBell} className='email-icon'/>
+            </div>
+        </div>
       <div className="job-list-card">
-            <div className="photo">
+            <div className="photo" onClick={profilePic}>
                 
             </div>
             <div className="list-card-middle-container">
@@ -24,7 +46,7 @@ const button = ()=>{
 
       </div>
       <div className="job-list-card">
-            <div className="photo">
+            <div className="photo" onClick={profilePic}>
                 
             </div>
             <div className="list-card-middle-container">
@@ -36,7 +58,7 @@ const button = ()=>{
 
       </div>
       <div className="job-list-card">
-            <div className="photo">
+            <div className="photo" onClick={profilePic}>
                 
             </div>
             <div className="list-card-middle-container">
@@ -48,7 +70,7 @@ const button = ()=>{
 
       </div>
       <div className="job-list-card">
-            <div className="photo">
+            <div className="photo" onClick={profilePic}>
                 
             </div>
             <div className="list-card-middle-container">
@@ -60,7 +82,7 @@ const button = ()=>{
 
       </div>
       <div className="job-list-card">
-            <div className="photo">
+            <div className="photo" onClick={profilePic}>
                 
             </div>
             <div className="list-card-middle-container">
@@ -73,7 +95,7 @@ const button = ()=>{
       </div>
 
       <div className="job-list-card">
-            <div className="photo">
+            <div className="photo" onClick={profilePic}>
                 
             </div>
             <div className="list-card-middle-container">
@@ -86,7 +108,7 @@ const button = ()=>{
       </div>
 
       <div className="job-list-card">
-            <div className="photo">
+            <div className="photo" onClick={profilePic}>
                 
             </div>
             <div className="list-card-middle-container">

@@ -12,6 +12,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+.top-part-job-list-searchbar{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 60px;
+    justify-content: space-between;
+    .font-awesome-icons-view{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+        .email-icon{
+            height: 20px;
+        }
+    }
+    /* .search-icon{
+        
+    } */
+    
+}
+.searchbar{
+    border: 1px solid black;
+    height: fit-content;
+    padding: 5px;
+    justify-content: space-around;
+    .input-box{
+        padding: 0px 10px;
+        width: 230px;
+
+    }
+}
 .middle-part{
     display: flex;
     /* flex-direction: row;
@@ -30,8 +61,6 @@
     flex: 2;
     /* background-color: aqua; */
     height: 100vh;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
 }
 .right{
     flex: 1;
@@ -41,6 +70,9 @@
 
 .jobs-middle-container{
     background-color: blue;
+}
+.messages-middle-container{
+    background-color: brown;
 }
 .networks-middle-container{
     background-color: green;
@@ -54,4 +86,43 @@
 .back-arrow-icon{
     color: aqua;
     cursor: pointer;
+}
+
+
+@media screen and (max-width:200px){
+    .job-list-card{
+        width: 80%;
+        display: flex;
+    }
+    .left-container{
+        display: none;
+    }
+    .right-container{
+        display: none;
+    }
+  
+}
+@media screen and (max-width:460px){
+    .input-box{
+        padding: 0px 10px;
+        width: 180px;
+
+    }
+    .left-container{
+        display: none;
+    }
+  
+}
+@media screen and (max-width:900px){
+    .input-box{
+        padding: 0px 10px;
+        width: 230px;
+
+    }
+    .left-container{
+        display: none;
+    }
+    .right-container{
+        display: none;
+    }
 }

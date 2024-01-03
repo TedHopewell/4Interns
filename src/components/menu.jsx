@@ -21,7 +21,9 @@ const notifications = ()=>{
 const profile = ()=>{
     navigate('/profile')
 }
-
+const messages = ()=>{
+    navigate('/messages')
+}
 
 
   return (
@@ -33,10 +35,11 @@ const profile = ()=>{
         </div>
         <div className="menu-tabs">
                 <div className="menuList" onClick={home}>Home</div>
-                <div className="menuList" onClick={networks}>My Networks</div>
+                <div className="menuList" onClick={networks}>Networks</div>
                 <div className="menuList" onClick={jobs}>Jobs</div>
                 <div className="menuList" onClick={notifications}>Notifications</div>
                 <div className="menuList" onClick={profile}>Profile</div>
+                <div className="menuList" onClick={messages}>Inbox</div>
         </div>
      
     </div>

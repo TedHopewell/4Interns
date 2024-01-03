@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Jobspage from './pages/jobs';
 import NotificationsPage from './pages/notifications';
 import Profilepage from './pages/profile';
+import MyMessages from './pages/messages';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path='/jobs' element={<Jobspage />}/>
           <Route exact path='/notifications' element={<NotificationsPage />}/>
           <Route exact path='/profile' element={<Profilepage />}/>
+          <Route exact path='/messages' element={<MyMessages />}/>
           </Route>
         </Routes>
       </Router>
