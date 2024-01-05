@@ -5,7 +5,7 @@
     /* position: fixed; */
 }
 .job-list-card{
-  
+    background-color: antiquewhite;
     /* background-color: rgba(100, 100, 100, 0.1); */
     /* flex-wrap: wrap; */
     display: flex;
