@@ -15,22 +15,31 @@ const button = ()=>{
 const profilePic = ()=>{
     navigate('/profile')
 }
+
+const messages = ()=>{
+    navigate('/messages')
+}
+const notifications = ()=>{
+    navigate('/notifications')
+}
   return (
     <div className='home-middle-container'>
         <div className="top-part-job-list-searchbar">
             <div className="photo" onClick={profilePic}>
                 
             </div>
-            <div className="searchbar">
-                <FontAwesomeIcon icon={faSearch} className='search-icon' />
-                <input type="text" className='input-box'/>
+            <div className="main-form">
+                <div className="searchbar" style={{border:'none'}}>
+                    <FontAwesomeIcon icon={faSearch} className='search-icon' style={{padding:'5px 5px'}}/>
+                    <input placeholder="Search Jobs" type="text" className='input-box' style={{padding:'5px 5px 0px 5px', borderBottom:'1px solid black'}}/>
+                </div>
             </div>
             <div className="font-awesome-icons-view">
                 <div className="logo">
                     4INTERNS
                 </div>
-                <FontAwesomeIcon icon={faEnvelope} className='email-icon'/>
-                <FontAwesomeIcon icon={faBell} className='email-icon'/>
+                <FontAwesomeIcon icon={faEnvelope} className='email-icon' onClick={messages}/>
+                <FontAwesomeIcon icon={faBell} className='email-icon' onClick={notifications}/>
             </div>
         </div>
       <div className="job-list-card">

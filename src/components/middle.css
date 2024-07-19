@@ -4,6 +4,19 @@
     flex-direction: column;
     /* position: fixed; */
 }
+.searchbar{
+    display: flex;
+    gap: 5px;
+    border-radius: 5px;
+    /* padding: 10px; */
+}
+.search-icon{
+    cursor: pointer;
+}
+.searchbar .input-box{
+    border: none;
+    
+}
 .job-list-card{
     background-color: antiquewhite;
     /* background-color: rgba(100, 100, 100, 0.1); */
@@ -70,7 +83,7 @@
 }
 @media screen and (max-width:200px){
     .job-list-card{
-        width: 80%;
+        width: 100vw;
         display: flex;
     }
     .left-container{
@@ -82,12 +95,20 @@
   
 }
 @media screen and (max-width:460px){
+    .job-list-card{
+        width: 100vw;
+        display: flex;
+    }
     .left-container{
         display: none;
     }
   
 }
 @media screen and (max-width:900px){
+    .job-list-card{
+        width: 100vw;
+        display: flex;
+    }
     .left-container{
         display: none;
     }

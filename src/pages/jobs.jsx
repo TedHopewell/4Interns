@@ -10,7 +10,7 @@ const Jobspage = () => {
   const navigate = useNavigate();
 
   const back = ()=>{
-    navigate('/')
+    navigate('/Home')
 }
 
   return (

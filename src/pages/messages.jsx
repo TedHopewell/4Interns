@@ -10,7 +10,7 @@ const MyMessages = () => {
   const navigate = useNavigate();
 
   const back = ()=>{
-    navigate('/')
+    navigate('/Home')
 }
   return (
     <div>
